@@ -1,0 +1,17 @@
+name: SMPQuietZones
+version: ${project.version}
+main: com.nickrodi.Main
+api-version: "1.21"
+authors: [nickrodi]
+description: Mute entity sounds inside admin-defined quiet zones.
+
+commands:
+  qz:
+    description: Quiet zone administration command.
+    usage: /qz
+    permission: smpquietzones.admin
+
+permissions:
+  smpquietzones.admin:
+    description: Allows managing quiet zones.
+    default: op
