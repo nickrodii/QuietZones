@@ -1,13 +1,13 @@
-package com.nickrodi;
+package quietzones;
 
 import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.nickrodi.command.QuietZoneCommand;
-import com.nickrodi.listener.SelectionListener;
-import com.nickrodi.mute.ZoneMuteService;
-import com.nickrodi.zone.ZoneManager;
-import com.nickrodi.zone.ZoneSelectionManager;
+import quietzones.command.QuietZoneCommand;
+import quietzones.listener.SelectionListener;
+import quietzones.mute.ZoneMuteService;
+import quietzones.zone.ZoneManager;
+import quietzones.zone.ZoneSelectionManager;
 
 public final class Main extends JavaPlugin {
     private ZoneManager zoneManager;
@@ -36,7 +36,7 @@ public final class Main extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new SelectionListener(selectionManager), this);
 
         zoneMuteService.start();
-        getLogger().info("SMPQuietZones enabled.");
+        getLogger().info("Quiet Zones enabled.");
     }
 
     @Override

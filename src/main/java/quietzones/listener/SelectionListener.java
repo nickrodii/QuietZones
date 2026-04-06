@@ -1,6 +1,6 @@
-package com.nickrodi.listener;
+package quietzones.listener;
 
-import com.nickrodi.zone.ZoneSelectionManager;
+import quietzones.zone.ZoneSelectionManager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;

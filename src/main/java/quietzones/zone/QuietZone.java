@@ -1,4 +1,4 @@
-package com.nickrodi.zone;
+package quietzones.zone;
 
 import org.bukkit.Location;
 

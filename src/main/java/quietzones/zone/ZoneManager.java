@@ -1,4 +1,4 @@
-package com.nickrodi.zone;
+package quietzones.zone;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,11 +1,11 @@
-package com.nickrodi.command;
+package quietzones.command;
 
-import com.nickrodi.mute.ZoneMuteService;
-import com.nickrodi.zone.QuietZone;
-import com.nickrodi.zone.ZoneManager;
-import com.nickrodi.zone.ZonePoint;
-import com.nickrodi.zone.ZoneSelectionManager;
-import com.nickrodi.zone.ZoneSelectionSession;
+import quietzones.mute.ZoneMuteService;
+import quietzones.zone.QuietZone;
+import quietzones.zone.ZoneManager;
+import quietzones.zone.ZonePoint;
+import quietzones.zone.ZoneSelectionManager;
+import quietzones.zone.ZoneSelectionSession;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 
 public final class QuietZoneCommand implements CommandExecutor, TabCompleter {
     private static final Pattern ZONE_ID_PATTERN = Pattern.compile("^[a-zA-Z0-9_-]+$");
-    private static final String ADMIN_PERMISSION = "smpquietzones.admin";
+    private static final String MANAGE_PERMISSION = "quietzones.manage";
 
     private final ZoneManager zoneManager;
     private final ZoneSelectionManager selectionManager;
@@ -36,7 +36,7 @@ public final class QuietZoneCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (!sender.hasPermission(ADMIN_PERMISSION)) {
+        if (!sender.hasPermission(MANAGE_PERMISSION)) {
             sender.sendMessage("You do not have permission to use this command.");
             return true;
         }
@@ -59,7 +59,7 @@ public final class QuietZoneCommand implements CommandExecutor, TabCompleter {
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String alias, String[] args) {
-        if (!sender.hasPermission(ADMIN_PERMISSION)) {
+        if (!sender.hasPermission(MANAGE_PERMISSION)) {
             return Collections.emptyList();
         }
 

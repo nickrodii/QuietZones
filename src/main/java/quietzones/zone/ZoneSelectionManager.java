@@ -1,4 +1,4 @@
-package com.nickrodi.zone;
+package quietzones.zone;
 
 import java.util.Map;
 import java.util.UUID;

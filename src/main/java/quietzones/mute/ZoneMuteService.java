@@ -1,6 +1,6 @@
-package com.nickrodi.mute;
+package quietzones.mute;
 
-import com.nickrodi.zone.ZoneManager;
+import quietzones.zone.ZoneManager;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;

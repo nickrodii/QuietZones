@@ -1,4 +1,4 @@
-package com.nickrodi.zone;
+package quietzones.zone;
 
 public final class ZoneSelectionSession {
     private final String zoneId;

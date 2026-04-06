@@ -1,17 +1,17 @@
-name: SMPQuietZones
+name: QuietZones
 version: ${project.version}
-main: com.nickrodi.Main
-api-version: "1.21"
+main: quietzones.Main
+api-version: "1.17"
 authors: [nickrodi]
-description: Mute entity sounds inside admin-defined quiet zones.
+description: Mute entity sounds in specific zones of a world (so farms can be noise-free!)
 
 commands:
   qz:
-    description: Quiet zone administration command.
+    description: Quiet zone management command
     usage: /qz
-    permission: smpquietzones.admin
+    permission: quietzones.manage
 
 permissions:
-  smpquietzones.admin:
-    description: Allows managing quiet zones.
+  quietzones.manage:
+    description: Allows player to manage quiet zones
     default: op
