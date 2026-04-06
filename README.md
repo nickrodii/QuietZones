@@ -2,6 +2,7 @@
 
 Quiet Zones is a very simple Minecraft plugin for all versions 1.17+ that allows players with proper permissions to specify different zones to mute entity noises, making mob farms silent and no longer disruptive.
 
+### [>> Download on Modrinth <<](https://modrinth.com/plugin/quiet-zones)
 ## Compatibility
 
 - For Bukkit, Spigot, Paper, and Purpur servers
